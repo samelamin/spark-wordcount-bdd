@@ -12,10 +12,9 @@ spAppendScalaVersion := false
 spIncludeMaven := true
 spIgnoreProvided := true
 parallelExecution in Test := false
-
 libraryDependencies ++= Seq(
-  "org.apache.spark" %% "spark-core" % sparkVersion % "provided",
-  "org.apache.spark" %% "spark-hive" % sparkVersion % "test",
+  "org.apache.spark" %% "spark-core" % "2.1.0" % "provided",
+  "org.apache.spark" %% "spark-hive" % "2.1.0"  % "test",
   "com.holdenkarau" %% "spark-testing-base" % "2.0.0_0.4.7" % "test",
   "joda-time" % "joda-time" % "2.9.3",
   "org.mockito" % "mockito-core" % "1.8.5" % "test",
